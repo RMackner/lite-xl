@@ -26,13 +26,12 @@ BuildRequires:  lua
 %{summary}
 
 %prep
-meson setup build
+%setup
 
 %build
 meson compile
 
 %install
-cd build
 meson install
 
 %files
