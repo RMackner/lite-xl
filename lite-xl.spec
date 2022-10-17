@@ -26,7 +26,7 @@ BuildRequires:  lua
 %{summary}
 
 %prep
-meson setup build
+meson setup lite-xl-2.0.5
 
 %build
 cd build
