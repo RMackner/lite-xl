@@ -40,7 +40,7 @@ ninja -C _build/ install
 
 
 %files
-   /usr/lib/debug/usr/local/bin/lite-xl-2.0.5-1.fc36.x86_64.debug
+   /usr/lib/debug/usr/local/bin/lite-xl-2.0.5-1.fc3*
    /usr/local/bin/lite-xl
    /usr/local/include/agg2/Makefile.am
    /usr/local/include/agg2/agg_alpha_mask_u8.h
