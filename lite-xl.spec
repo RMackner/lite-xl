@@ -30,14 +30,15 @@ and fast, implemented as simply as possible; easy to
 modify and extend, or to use without doing either.
 
 %prep
-%autosetup 
+%setup
 
 %build
-%meson
-%meson_build
+meson _build
+ninja -C _build/
 
 %install
-%meson_install
+export DESTDIR=%{buildroot}
+ninja -C _build/ install
 
 %files
 %{_bindir}/lite-xl
