@@ -21,6 +21,7 @@ BuildRequires:  scdoc
 BuildRequires:  lua-devel
 BuildRequires:  pcre2-devel
 BuildRequires:  lua-libs
+BuildRequires:  lua
 
 %description
 %{summary}
