@@ -29,11 +29,11 @@ BuildRequires:  lua
 %setup
 
 %build
-meson compile -C
+meson compile
 
 %install
     meson configure -Db_pgo=use
-    meson compile -C
+    meson compile
 
 %files
 
