@@ -1,8 +1,8 @@
 %global         realname lite
 %global         build_timestamp %{lua: print(os.date("%Y%m%d"))}
 
-Name:           %{realname}-xl-nightly
-Version:        nightly
+Name:           %{realname}-xl
+Version:        2.0.5
 Release:        %{build_timestamp}%{?dist}
 Summary:        A lightweight text editor written in Lua
 
@@ -30,7 +30,7 @@ and fast, implemented as simply as possible; easy to
 modify and extend, or to use without doing either.
 
 %prep
-%autosetup -n %{realname}-xl-master
+%autosetup 
 
 %build
 %meson
