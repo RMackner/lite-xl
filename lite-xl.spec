@@ -29,14 +29,11 @@ BuildRequires:  lua
 %setup
 
 %build
-meson compile -C "${build_dir}"
+meson compile -C
 
 %install
-cp -r data "${build_dir}/src"
-    "${build_dir}/src/lite-xl"
-    meson configure -Db_pgo=use "${build_dir}"
-    meson compile -C "${build_dir}"
-    rm -fr "${build_dir}/data"
+    meson configure -Db_pgo=use
+    meson compile -C
 
 %files
 
