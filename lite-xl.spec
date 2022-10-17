@@ -29,12 +29,12 @@ BuildRequires:  lua
 %setup
 
 %build
-meson _build
-ninja -C _build/
+meson setup build
+meson compile
 
 %install
-export DESTDIR=%{buildroot}
-ninja -C _build/ install
+cd build
+meson install
 
 %files
 
