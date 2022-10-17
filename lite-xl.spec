@@ -21,6 +21,8 @@ BuildRequires:  lua-devel
 BuildRequires:  pcre2-devel
 BuildRequires:  lua-libs
 BuildRequires:  SDL2-devel
+BuildRequires:  freetype
+BuildRequires:  freetype-devel
 
 %description
 %{summary}
