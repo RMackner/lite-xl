@@ -26,14 +26,14 @@ BuildRequires:  lua
 %{summary}
 
 %prep
-%setup
+meson setup build
 
 %build
 meson compile
 
 %install
-    meson configure -Db_pgo=use
-    meson compile
+cd build
+meson install
 
 %files
 
