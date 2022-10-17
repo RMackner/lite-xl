@@ -4,7 +4,7 @@ Release:        %autorelease
 Summary:        A lightweight text editor written in Lua, adapted from lite.
 License:        MIT
 URL:            https://github.com/lite-xl/lite-xl
-Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
+Source0:        https://github.com/RMackner/lite-xl/releases/download/test/2.0.5.tar.gz
 Conflicts:      lite-xl
 
 Requires: lua
