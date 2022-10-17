@@ -1,8 +1,8 @@
 %global         realname lite
 %global         build_timestamp %{lua: print(os.date("%Y%m%d"))}
 
-Name:           %{realname}-xl
-Version:        2.0.5
+Name:           %{realname}-xl-nightly
+Version:        nightly
 Release:        %{build_timestamp}%{?dist}
 Summary:        A lightweight text editor written in Lua
 
