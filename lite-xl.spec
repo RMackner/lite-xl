@@ -30,7 +30,7 @@ and fast, implemented as simply as possible; easy to
 modify and extend, or to use without doing either.
 
 %prep
-%setup
+%autosetup -n %{realname}-xl-master
 
 %build
 meson _build
