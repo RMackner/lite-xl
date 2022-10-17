@@ -20,20 +20,22 @@ BuildRequires:  scdoc
 BuildRequires:  lua-devel
 BuildRequires:  pcre2-devel
 BuildRequires:  lua-libs
-BuildRequires:  lua
+BuildRequires:  SDL2-devel
 
 %description
 %{summary}
 
 %prep
-meson setup lite-xl-2.0.5
+%setup
 
 %build
-cd build
-meson compile
+meson _build
+ninja -C _build/
 
 %install
-meson install
+export DESTDIR=%{buildroot}
+ninja -C _build/ install
+
 
 %files
 
