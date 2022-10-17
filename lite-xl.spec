@@ -8,7 +8,7 @@ Summary:        A lightweight text editor written in Lua
 
 License:        MIT
 URL:            https://github.com/franko/lite-xl
-Source0:        https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.0.5.tar.gz
+Source0:        https://github.com/lite-xl/lite-xl/archive/refs/heads/master.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
