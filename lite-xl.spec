@@ -10,7 +10,6 @@ Conflicts:      lite-xl
 Requires: lua
 Requires: pcre2
 Requires: freetype
-Requires: libxkbcommon
 
 BuildRequires:  meson
 BuildRequires:  gcc
