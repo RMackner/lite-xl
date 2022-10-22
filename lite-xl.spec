@@ -135,3 +135,6 @@ ninja -C _build/ install
 
 
 %license LICENSE
+
+%changelog
+%autochangelog
